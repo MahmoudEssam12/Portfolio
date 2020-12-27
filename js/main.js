@@ -81,17 +81,17 @@ if (windowWidth.matches) {
 
 	tl.to('.hamburger', {
 		'left': '80%',
-		duration: .1
+		duration: .3
 	}, '-=.2')
 	tl.to('.overlay-opac', {
-		opacity: 1,
+		opacity: 3,
 		'backgroundColor': "rgba(0, 0, 0, 0.3)",
 		'zIndex': "2"
 	})
 
 	tl.to('#sidebar-wrapper', {
 		'transform': 'translateX(0%)',
-		duration: .1,
+		duration: .3,
 		ease: "power1.out"
 	}, '-=.2')
 	tl.to('.f', {
