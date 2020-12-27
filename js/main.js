@@ -90,7 +90,7 @@ if (windowWidth.matches) {
 	})
 
 	tl.to('#sidebar-wrapper', {
-		'transform': 'translateX(100%)',
+		'transform': 'translateX(0%)',
 		duration: .1,
 		ease: "power1.out"
 	}, '-=.2')
