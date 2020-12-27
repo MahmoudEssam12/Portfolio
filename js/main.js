@@ -80,8 +80,9 @@ if (windowWidth.matches) {
 	var toggleMe = false;
 
 	tl.to('.hamburger', {
-		'left': '80%'
-	})
+		'left': '80%',
+		duration: .1
+	}, '-=.2')
 	tl.to('.overlay-opac', {
 		opacity: 1,
 		'backgroundColor': "rgba(0, 0, 0, 0.3)",
@@ -89,13 +90,14 @@ if (windowWidth.matches) {
 	})
 
 	tl.to('#sidebar-wrapper', {
-		'width': '80%',
-		duration: .1
-	})
+		'transform': 'translateX(100%)',
+		duration: .1,
+		ease: "power1.out"
+	}, '-=.2')
 	tl.to('.f', {
 		"transformOrigin": "0px 0px 0px",
 		"transform": "translate(-1px, 16.971px) rotate(-45deg)",
-		duration: .2
+		duration: .1
 	})
 	tl.to('.s', {
 		'transform': 'translateX(10px)',
@@ -106,7 +108,7 @@ if (windowWidth.matches) {
 	tl.to('.t', {
 		"transformOrigin": "0 0px 0",
 		"transform": "translate(1.293px, -23.506px) rotate(45deg)",
-		duration: .2
+		duration: .1
 	})
 	tl.pause();
 
