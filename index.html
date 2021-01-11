@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Mahmoud Essam portfolio it has some of my works and informations about my career ">
+    <meta name="keywords" content="portfolio, html, css , js, javascript , vue.js , css, scss">
+    <title>Mahmoud Essam's Portfolio</title>
+    <link rel="shortcut icon" type="image/png" href="imgs/Portfolio.png">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/simple-sidebar.css">
+    <link rel="stylesheet" href="sass/main.css" />
+</head>
+
+<body>
+    <div id="overlayer"></div>
+    <div class="loader">
+        <div class="spinner-border text-primary trans" role="status"> <span class="sr-only">Loading...</span></div>
+    </div> <button class="darkmode-btn" id="darkToggler"><i class="fas fa-moon"></i></button>
+    <div class="wrapper-flexy">
+        <div class="d-flex" id="wrapper">
+            <div class="bg-light border-right" id="sidebar-wrapper">
+                <div class="sidebar-heading">
+                    <div class="my-pic"> <img src="imgs/avatar.jpg" alt="Mahmoud Essam" class="rounded-circle" /></div>
+                    <div class="my-name">
+                        <h2>Mahmoud Essam</h2>
+                        <p> <span>Front-End Developer</span></p>
+                    </div>
+                </div>
+                <div class="list-group list-group-flush" id="demo">
+                    <ul class="main-nav">
+                        <li v-for="(tab,index) in navList"><a :href="'#' + index"
+                                :data-value="tab">{{tab.toUpperCase()}}</a></li>
+                    </ul>
+                </div>
+                <div class="fixed-copyrights">
+                    <p> <small> ©Copyright ©
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved | This
+                            template had remade with <i class="icon-heart" aria-hidden="true"></i> by <span
+                                class="my-right">Mahmoud Essam</span> and <a href="https://colorlib.com" rel="external"
+                                target="_blank">Colorlib</a>
+                        </small></p>
+                </div>
+            </div>
+            <div class="overlay-opac"></div>
+            <div id="page-content-wrapper">
+                <div class="hamburger">
+                    <nav class="navbar navbar-dark indigo darken-2"> <button class="navbar-toggler third-button"
+                            type="button" data-toggle="collapse" data-target="#navbarSupportedContent22"
+                            aria-controls="navbarSupportedContent22" id="menu-toggle" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <div class="animated-icon3">
+                                <span class="f"></span>
+                                <span class="s"></span>
+                                <span class="t"></span>
+                            </div>
+                        </button></nav>
+                </div>
+                <div class="page-content " id="0">
+                    <div class="info-slider">
+                        <div class="owl-carousel owl-theme" id="mainSlider">
+                            <div class="item">
+                                <div class="bg-owl first-bg ">
+                                    <div class="overlay"></div>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="info-wrapper animated">
+                                                    <h1>Hi! <br> I'm Mahmoud</h1>
+                                                    <p class="welcome-para">Welcome to my Portfolio</p>
+                                                    <p class="tour">Look Over the place maybe you like something...</p>
+                                                    <div class="down-cv"> <a
+                                                            href="https://drive.google.com/file/d/1lLwLm60L3cXxgblXQN0wSdAn4jXrv0Ck/view?usp=sharing"
+                                                            rel="external" target="_blank"
+                                                            class="btn download-link">Download CV <i
+                                                                class="fas fa-download"></i></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="bg-owl second-bg">
+                                    <div class="overlay"></div>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="info-wrapper animated">
+                                                    <h1>Hi! <br> I'm Mahmoud</h1>
+                                                    <p class="welcome-para">Welcome to my Portfolio</p>
+                                                    <p class="tour">Look Over the place maybe you like something...</p>
+                                                    <div class="down-cv"> <a
+                                                            href="https://drive.google.com/file/d/1lLwLm60L3cXxgblXQN0wSdAn4jXrv0Ck/view?usp=sharing"
+                                                            rel="external" target="_blank"
+                                                            class="btn download-link">Download CV <i
+                                                                class="fas fa-download"></i></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="rest-page-content">
+        <section class="about-section">
+            <div class="container" id="1">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="info-about wow fadeIn" data-wow-duration="2s"> <span>ABOUT ME</span>
+                            <h2>who am i ?</h2>
+                            <p class="para-about1"> <span>Hi i'm Mahmoud Essam</span> i'm a student in faculty of
+                                commerce in Mansoura University .. this is my third year there .. i know my faculty not
+                                related to programming but you know this is Egypt. <br> so i started to learn
+                                programming in like 6 months ago i took courses online in
+                                (HTML,CSS,JS,jQuery,Bootstrap,vue.js,sass, ...) i made some websites with those tools
+                                you will find them in this site.</p>
+                            <p class="para-about2"> i was a trainee in a company in Mansoura it's name "ipda3 tech" <br>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ratione facere unde
+                                vitae iure molestiae.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-me">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="hint hint1 wow fadeIn" data-wow-duration="1s"> <span class="hint-icon"><i
+                                        class="fas fa-paint-roller"></i></span>
+                                <h3>Front-End Development</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="hint hint2 wow fadeIn" data-wow-duration="1s"> <span class="hint-icon2"><i
+                                        class="fas fa-mobile"></i></span>
+                                <h3>Responsive Design</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills" id="2">
+                    <div class="info-about wow fadeIn" data-wow-duration="2s"> <span>What i can do</span>
+                        <h2>My skills</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s"> <span
+                                    class="ser-icon color1"><i class="far fa-lightbulb"></i></span>
+                                <div class="card-content">
+                                    <h4>Innovative Ideas</h4>
+                                    <p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s"> <span
+                                    class="ser-icon color2"><i class="fas fa-laptop-code"></i></span>
+                                <div class="card-content">
+                                    <h4>persistence</h4>
+                                    <p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card wow fadeInUp" data-wow-duration="2s" data-wow-delay=".6s"> <span
+                                    class="ser-icon color3"><i class="fas fa-tablet"></i></span>
+                                <div class="card-content">
+                                    <h4>endurance</h4>
+                                    <p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-skills-progress wow fadeIn" data-wow-duration="1s">
+                        <p> The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild
+                            Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her
+                            seven versalia, put her initial into the belt and made herself on the way.</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="progress-wrap wow fadeIn" data-wow-duration="1s">
+                                    <h4>Html , html5</h4>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-color1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="progress-wrap wow fadeIn" data-wow-duration="1s">
+                                    <h4>css , css3</h4>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-color2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="progress-wrap wow fadeIn" data-wow-duration="1s">
+                                    <h4>Javascript</h4>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-color3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="progress-wrap wow fadeIn" data-wow-duration="1s">
+                                    <h4>React.js</h4>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-color4"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="progress-wrap wow fadeIn" data-wow-duration="1s">
+                                    <h4>vue.js</h4>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-color5"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="progress-wrap wow fadeIn" data-wow-duration="1s">
+                                    <h4>sass</h4>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-color6"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="progress-wrap wow fadeIn" data-wow-duration="1s">
+                                    <h4>php</h4>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-color7"> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="education" id="3">
+                    <div class="info-about wow fadeIn" data-wow-duration="2s"> <span>What i Learned</span>
+                        <h2>Education</h2>
+                    </div>
+                    <div class="accordion-wrap">
+                        <div class="panel-gen panel1 wow fadeIn" data-wow-duration="2s">
+                            <div class="panel-heading">
+                                <h4> <a href="#panel1" class="panel-link" @click="toggle" rel="alternate"
+                                        data-toggle="collapse" role="button" aria-expanded="false"
+                                        aria-controls="panel1">programming self study online </a></h4>
+                            </div>
+                            <div class="accordion-content collapse panel1" id="panel1">
+                                <div class="accordion-content-wrap"> i studied programming from internet all by myself
+                                    from deferant resources ... <br> Lorem, ipsum dolor sit amet consectetur adipisicing
+                                    elit. Possimus quo hic tenetur at quod, minus harum laudantium eaque dolore
+                                    exercitationem?</div>
+                            </div>
+                        </div>
+                        <div class="panel-gen panel1 wow fadeIn" data-wow-duration="2s">
+                            <div class="panel-heading">
+                                <h4> <a href="#panel2" class="panel-link" @click="toggle" rel="alternate"
+                                        data-toggle="collapse" role="button" aria-expanded="false"
+                                        aria-controls="panel1">programming self study online </a></h4>
+                            </div>
+                            <div class="accordion-content collapse panel2" id="panel2">
+                                <div class="accordion-content-wrap"> i studied programming from internet all by myself
+                                    from deferant resources ... <br> Lorem, ipsum dolor sit amet consectetur adipisicing
+                                    elit. Possimus quo hic tenetur at quod, minus harum laudantium eaque dolore
+                                    exercitationem?</div>
+                            </div>
+                        </div>
+                        <div class="panel-gen panel1 wow fadeIn" data-wow-duration="2s">
+                            <div class="panel-heading">
+                                <h4> <a href="#panel3" class="panel-link" @click="toggle" rel="alternate"
+                                        data-toggle="collapse" role="button" aria-expanded="false"
+                                        aria-controls="panel1">programming self study online </a></h4>
+                            </div>
+                            <div class="accordion-content collapse panel2" id="panel3">
+                                <div class="accordion-content-wrap"> i studied programming from internet all by myself
+                                    from deferant resources ... <br> Lorem, ipsum dolor sit amet consectetur adipisicing
+                                    elit. Possimus quo hic tenetur at quod, minus harum laudantium eaque dolore
+                                    exercitationem?</div>
+                            </div>
+                        </div>
+                        <div class="panel-gen panel1 wow fadeIn" data-wow-duration="2s">
+                            <div class="panel-heading">
+                                <h4> <a href="#panel4" class="panel-link" @click="toggle" rel="alternate"
+                                        data-toggle="collapse" role="button" aria-expanded="false"
+                                        aria-controls="panel1">programming self study online </a></h4>
+                            </div>
+                            <div class="accordion-content collapse panel2" id="panel4">
+                                <div class="accordion-content-wrap"> i studied programming from internet all by myself
+                                    from deferant resources ... <br> Lorem, ipsum dolor sit amet consectetur adipisicing
+                                    elit. Possimus quo hic tenetur at quod, minus harum laudantium eaque dolore
+                                    exercitationem?</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience" id="4">
+                    <div class="info-about wow fadeIn" data-wow-duration="2s"> <span>Experience</span>
+                        <h2>Work Experience</h2>
+                    </div>
+                    <div class="experience-wrapper">
+                        <div class="period period1 wow fadeIn" data-wow-duration="2s">
+                            <div class="pen-icon"> <i class="fas fa-pencil-alt"></i></div>
+                            <div class="exp-card">
+                                <h3>ipda3 internship <sub>2 months </sub></h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, numquam veritatis
+                                    suscipit magni ex eligendi voluptate aperiam amet modi harum officiis et error aut!
+                                    Minus itaque rem natus eveniet dignissimos!</p>
+                            </div>
+                        </div>
+                        <div class="period period2 wow fadeIn" data-wow-duration="2s">
+                            <div class="pen-icon"> <i class="fas fa-pencil-alt"></i></div>
+                            <div class="exp-card">
+                                <h3>Freelance <sub>4 months</sub></h3>
+                                <p>i worked as a freelancer for a
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, numquam veritatis
+                                    suscipit magni ex eligendi voluptate aperiam amet modi harum officiis et error aut!
+                                    Minus itaque rem natus eveniet dignissimos!</p>
+                            </div>
+                        </div>
+                        <div class="period period3 wow fadeIn" data-wow-duration="2s">
+                            <div class="pen-icon"> <i class="fas fa-pencil-alt"></i></div>
+                            <div class="exp-card">
+                                <h3>The Fourth Pyramid company <sub>4 months</sub></h3>
+                                <p> I worked at the fourth pyramid company in 2020 till Novamber and i left it because
+                                    of my last year in college and i'm working as a freelancer in my freetime
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, numquam veritatis
+                                    suscipit magni ex eligendi voluptate aperiam amet modi harum officiis et error aut!
+                                    Minus itaque rem natus eveniet dignissimos!</p>
+                            </div>
+                        </div>
+                        <div class="empty-icon">
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works" id="5">
+                    <div class="info-about wow fadeIn" data-wow-duration="2s"> <span>My Work</span>
+                        <h2>Recent Work</h2>
+                    </div>
+                    <div class="works-tabs-wrapper">
+                        <div class="works-tabs wow fadeIn" data-wow-duration="2s">
+                            <ul class="tabs">
+                                <li class="tab tab1" @click="activeTab = '1'"
+                                    :class="[activeTab === '1' ? 'active' : '']">
+                                    <h3>ALL</h3>
+                                </li>
+                                <li class="tab tab2" @click="activeTab = '2'"
+                                    :class="[activeTab === '2' ? 'active' : '']">
+                                    <h3>Ipda3 Intern</h3>
+                                </li>
+                                <li class="tab tab3" @click="activeTab = '3'"
+                                    :class="[activeTab === '3' ? 'active' : '']">
+                                    <h3>Freelance</h3>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="works-content" v-if="activeTab === '1'">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="tabs-content tabs-content1 wow fadeIn" data-wow-duration="2s">
+                                        <div class="content-wrap">
+                                            <div class="project"> <img src="imgs/project1.png" alt="ipda3"> <a
+                                                    href="https://ipda3temp.netlify.app" rel="external" target="_blank"
+                                                    class="project-details">
+                                                    <h4>Ipda3</h4> <span>I made it with Love and care</span>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="tabs-content tabs-content1 wow fadeIn" data-wow-duration="2s">
+                                        <div class="content-wrap">
+                                            <div class="project"> <img src="imgs/project2.png" alt="Oops"> <a
+                                                    href="https://oopse.netlify.app" rel="external" target="_blank"
+                                                    class="project-details projbg-2">
+                                                    <h4>OOPS</h4> <span> I made it with Love and care</span>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="tabs-content tabs-content1 wow fadeIn" data-wow-duration="2s">
+                                        <div class="content-wrap">
+                                            <div class="project"> <img src="imgs/project3.jpg" alt="Blood Bank"> <a
+                                                    href="https://bloodbank80.netlify.app" rel="external"
+                                                    target="_blank" class="project-details projbg-3">
+                                                    <h4>Blood Bank</h4> <span>I made it with Love and care</span>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="tabs-content tabs-content1 wow fadeIn" data-wow-duration="2s">
+                                        <div class="content-wrap">
+                                            <div class="project"> <img src="imgs/project4.jpg" alt="sofra"> <a
+                                                    href="https://sofraty.netlify.app" rel="external" target="_blank"
+                                                    class="project-details projbg-4">
+                                                    <h4>Sofra</h4> <span>I made it with Love and care</span>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="tabs-content tabs-content1 wow fadeIn" data-wow-duration="2s">
+                                        <div class="content-wrap">
+                                            <div class="project"> <img src="imgs/Expert.png" alt="expert"> <a
+                                                    href="https://expertsite.netlify.app" rel="external" target="_blank"
+                                                    class="project-details">
+                                                    <h4>Expert</h4> <span>I made it with Love and care</span>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="tabs-content tabs-content1 wow fadeIn" data-wow-duration="2s">
+                                        <div class="content-wrap">
+                                            <div class="project"> <img src="imgs/apart.jpg" alt="apart"> <a
+                                                    href="https://aparty.netlify.app/" rel="external" target="_blank"
+                                                    class="project-details projbg-2">
+                                                    <h4>Apart</h4> <span> I made it with Love and care</span>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="tabs-content tabs-content1 wow fadeIn" data-wow-duration="2s">
+                                        <div class="content-wrap">
+                                            <div class="project"> <img src="imgs/d.png" alt="doctory"> <a
+                                                    href="https://doctorysite.netlify.app" rel="external"
+                                                    target="_blank" class="project-details projbg-2">
+                                                    <h4>Doctory</h4> <span> I made it with Love and care</span>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="works-content" v-if="activeTab === '2'">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="tabs-content tabs-content1 wow fadeIn" data-wow-duration="2s">
+                                        <div class="content-wrap">
+                                            <div class="project"> <img src="imgs/project1.png" alt="ipda3"> <a
+                                                    href="https://ipda3temp.netlify.app" rel="external" target="_blank"
+                                                    class="project-details">
+                                                    <h4>Ipda3</h4> <span>I made it with Love and care</span>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="tabs-content tabs-content1 wow fadeIn" data-wow-duration="2s">
+                                        <div class="content-wrap">
+                                            <div class="project"> <img src="imgs/project2.png" alt="Oops"> <a
+                                                    href="https://oopse.netlify.app" rel="external" target="_blank"
+                                                    class="project-details projbg-2">
+                                                    <h4>OOPS</h4> <span> I made it with Love and care</span>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="tabs-content tabs-content1 wow fadeIn" data-wow-duration="2s">
+                                        <div class="content-wrap">
+                                            <div class="project"> <img src="imgs/project3.jpg" alt="Blood Bank"> <a
+                                                    href="https://bloodbank80.netlify.app" rel="external"
+                                                    target="_blank" class="project-details projbg-3">
+                                                    <h4>Blood Bank</h4> <span>I made it with Love and care</span>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="tabs-content tabs-content1 wow fadeIn" data-wow-duration="2s">
+                                        <div class="content-wrap">
+                                            <div class="project"> <img src="imgs/project4.jpg" alt="sofra"> <a
+                                                    href="https://sofraty.netlify.app" rel="external" target="_blank"
+                                                    class="project-details projbg-4">
+                                                    <h4>Sofra</h4> <span>I made it with Love and care</span>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="works-content" v-if="activeTab === '3'">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="tabs-content tabs-content1 wow fadeIn" data-wow-duration="2s">
+                                        <div class="content-wrap">
+                                            <div class="project"> <img src="imgs/Expert.png" alt="expert"> <a
+                                                    href="https://expertsite.netlify.app" rel="external" target="_blank"
+                                                    class="project-details">
+                                                    <h4>Expert</h4> <span>I made it with Love and care</span>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="tabs-content tabs-content1 wow fadeIn" data-wow-duration="2s">
+                                        <div class="content-wrap">
+                                            <div class="project"> <img src="imgs/apart.jpg" alt="apart"> <a
+                                                    href="https://aparty.netlify.app/" rel="external" target="_blank"
+                                                    class="project-details projbg-2">
+                                                    <h4>Apart</h4> <span> I made it with Love and care</span>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="tabs-content tabs-content1 wow fadeIn" data-wow-duration="2s">
+                                        <div class="content-wrap">
+                                            <div class="project"> <img src="imgs/d.png" alt="doctory"> <a
+                                                    href="https://doctorysite.netlify.app" rel="external"
+                                                    target="_blank" class="project-details projbg-2">
+                                                    <h4>Doctory</h4> <span> I made it with Love and care</span>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="react-portfolio-ad">
+                        <a href="https://essaminreact.netlify.app/">
+                            Click to Visit My Rreact Portfolio for more Projects <i class="fab fa-react"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-me" id="6">
+                    <div class="info-about wow fadeIn" data-wow-duration="2s"> <span>Get In Touch</span>
+                        <h2>Contact Me</h2>
+                    </div>
+                    <div class="contact-wrapper">
+                        <div class="info-aboutMe my-info">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="three-cards wow fadeIn" data-wow-duration="2s">
+                                        <div class="icon-container"> <i class="fas fa-inbox"></i></div>
+                                        <span>essamm65@yahoo.com</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="three-cards wow fadeIn" data-wow-duration="2s">
+                                        <div class="icon-container"> <i class="far fa-map"></i></div>
+                                        <span>Met-Ghamr,Daquhliah,Egypt</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="three-cards wow fadeIn" data-wow-duration="2s">
+                                        <div class="icon-container phone"> <i class="fas fa-phone"></i></div> <span>+02
+                                            01149835766</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="three-cards wow fadeIn" data-wow-duration="2s">
+                                        <div class="icon-container"> <i class="fab fa-facebook-square"></i></div> <a
+                                            href="https://www.facebook.com/mahmoud.essam.1422/" rel="external"
+                                            target="_blank" class="my-account">My Facebook account</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="three-cards wow fadeIn" data-wow-duration="2s">
+                                        <div class="icon-container"> <i class="fab fa-twitter"></i></div> <a
+                                            href="https://twitter.com/MahmoudEssam69" rel="external" target="_blank"
+                                            class="my-account">Twitter account</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="js/jQuery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/vue.min.js"></script>
+    <script src="js/jquery.singlePageNav.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        new WOW().init();
+        $('#demo').singlePageNav({ easing: 'swing', currentClass: 'active-li', threshold: 120, speed: 1000, offset: 50 })
+    </script>
+</body>
+
+</html>
