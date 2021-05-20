@@ -63,14 +63,18 @@ var tabs = new Vue({
 }); new WOW().init();
 
 // gsap animation
+const wait = () => {
+	TweenLite.delayedCall(0.7, clearIt)
+}
+const clearIt = () => {
+	TweenLite.set('.hamburger, .overlay-opac, #sidebar-wrapper, .f, .s, .t',
+		{ clearProps: 'all' })
+}
 const toggleButton = document.querySelector('.third-button');
 const tl = gsap.timeline({
 	defaults: { ease: "power1.out", duration: 0.1 },
-	onReverseComplete: () => {
-		TweenLite.set('.hamburger, .overlay-opac, #sidebar-wrapper, .f, .s, .t',
-			{ clearProps: 'all' }
-		)
-	}
+	onReverseComplete: wait
+
 });
 var windowWidth = window.matchMedia("(max-width: 768px)");
 var windowMobWidth = window.matchMedia("(max-width: 415px)");
